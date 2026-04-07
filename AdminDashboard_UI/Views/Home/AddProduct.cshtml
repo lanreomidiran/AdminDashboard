@@ -7,7 +7,7 @@
 </div>
 
 
-<form asp-controller="Product" asp-action="AddProductItem">
+<form asp-controller="Product" asp-action="AddProductItem" method="post">
         <div class="mb-3">
             <label for="productname" class="form-label">Product Name</label>
             <input type="text" name="productname" class="form-control" id="product name" placeholder="Enter your product name" />
@@ -18,7 +18,7 @@
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Price</label>
-            <input type="number" name="price" class="form-control" id="price" placeholder="Enter your price" />
+            <input type="text" name="price" class="form-control" id="price" placeholder="Enter your price" />
         </div>
         <div class="mb-3">
             <label for="color" class="form-label">Color</label>

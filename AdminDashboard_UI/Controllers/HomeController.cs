@@ -23,7 +23,7 @@ namespace AdminDashboard_UI.Controllers
 
         public IActionResult Dashboard()
         {
-            var data = _context.Users.ToList();
+            var data = _context.Products.ToList();
             return View(data);
         }
 
@@ -73,15 +73,16 @@ namespace AdminDashboard_UI.Controllers
         public IActionResult Login(string username, string password)
         {
             var user = _context.Users.FirstOrDefault(u => u.Name == username);
+            
             if (user == null)
             {
-                return View("UserNotFound");
+                return RedirectToAction("UserNotFound");
             }
             if (user.Password != password)
             {
-                return View("PasswordIncorrect");
+                return RedirectToAction("PasswordIncorrect");
             }
-            return View("Dashboard;");
+            return RedirectToAction("Dashboard");
 
         }
     }
