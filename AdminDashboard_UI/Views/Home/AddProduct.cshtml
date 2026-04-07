@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Add Product";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Add Product</h1>
+</div>
+
+
+<form asp-controller="Product" asp-action="AddProductItem">
+        <div class="mb-3">
+            <label for="productname" class="form-label">Product Name</label>
+            <input type="text" name="productname" class="form-control" id="product name" placeholder="Enter your product name" />
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <input type="text" name="description" class="form-control" id="description" placeholder="Enter your description" />
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" name="price" class="form-control" id="price" placeholder="Enter your price" />
+        </div>
+        <div class="mb-3">
+            <label for="color" class="form-label">Color</label>
+            <input type="text" name="color" class="form-control" id="color" placeholder="Enter your color" />
+        </div>
+        <button type="submit" class="btn btn-primary">Add Product</button>
+
+</form>

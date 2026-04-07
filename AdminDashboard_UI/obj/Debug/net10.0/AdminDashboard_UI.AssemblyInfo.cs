@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdminDashboard_UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f99edf031e1c3bd2c7db76f5ba7362e63fe4b97")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdminDashboard_UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdminDashboard_UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
