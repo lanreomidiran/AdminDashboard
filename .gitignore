@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/AdminDashboard/CopilotIndices/18.3.511.5503
+/.vs/AdminDashboard.slnx/DesignTimeBuild/.dtbcache.v2
+/.vs/AdminDashboard.slnx/FileContentIndex/41569a14-a8f6-42b3-9822-2ea8ad2e6e94.vsidx
+/.vs/AdminDashboard.slnx/FileContentIndex/dc0fcee3-b878-4055-be17-dc5b9f0abb04.vsidx
+/.vs/AdminDashboard.slnx/FileContentIndex/fa6762f4-3ebd-43b1-a94b-61c1c1e51fb1.vsidx
+/.vs/AdminDashboard.slnx/v18/.futdcache.v2
+/.vs/AdminDashboard.slnx/v18/.suo
+/.vs/AdminDashboard.slnx/v18/DocumentLayout.backup.json
+/.vs/AdminDashboard.slnx/v18/DocumentLayout.json
+/AdminDashboard_UI/obj/Debug/net10.0/AdminDashboard_UI.AssemblyInfo.cs
+/AdminDashboard_UI/obj/Debug/net10.0/AdminDashboard_UI.AssemblyInfoInputs.cache
+/AdminDashboard_UI/obj/Debug/net10.0/rpswa.dswa.cache.json
