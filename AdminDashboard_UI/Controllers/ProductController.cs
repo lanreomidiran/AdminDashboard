@@ -15,6 +15,30 @@ namespace AdminDashboard_UI.Controllers
             return View();
         }
 
+        public IActionResult UpdateProduct(int productid) 
+        {
+            var data = _context.Products.FirstOrDefault(p => p.ProductId == productid);
+            return View(data);
+        }
+
+        [HttpPost]
+        public IActionResult UpdateProductItem(int productid, string productname, string description, decimal price, string color)
+        {
+            var data = _context.Products.FirstOrDefault(p => p.ProductId == productid);
+            if (data == null)
+            {
+                return NotFound();
+            }
+            
+            data.ProductName = productname;
+            data.Description = description;
+            data.Price = price;
+            data.Color = color;
+
+            _context.Products.Update(data);
+            _context.SaveChanges();
+            return RedirectToAction("Dashboard", "Home");
+        }
         [HttpPost]
         public IActionResult AddProductItem(string productName, string description, decimal price, string color)
         {
@@ -40,5 +64,3 @@ namespace AdminDashboard_UI.Controllers
         }
     }
 }
-
-            
